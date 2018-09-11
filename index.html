@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Talk to the web page</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Talk to the web page</h1>
+      <p>Click a button to say something to the web page. See what it says back!</p>
+      <div id="letter">
+        <form>
+          <label for="personInput">Your Name: </label>
+          <input id="personInput" type="text" class="form-control">
+
+          <label for="colorInput">Favorite Color: </label>
+          <input id="colorInput" name="color" type="color" class="form-control">
+
+          <label for="dateInput">Ideal Date: </label>
+          <input id="dateInput" type="text" class="form-control">
+
+          <label for="startTimeInput">Start time: </label>
+          <select id="startTimeInput" class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+
+          <label for="endTimeInput">End time: </label>
+          <input id="endTimeInput" type="text" class="form-control">
+
+          <button type="submit" class="btn">Submit here</button>
+
+        </form>
+      </div>
+
+      <div class="addressedletter">
+        <p> Thank you, <span class="personname"></span>.  Your forvite color is: <span class="colorInput"></span> </p>
+        <p>Your appointment is on <span class="dateInput"></span> from <span class="startTimeInput"></span> to <span class="endTimeInput"></span>.</p>
+      </div>
+
+    </div>
+  </body>
+</html>
